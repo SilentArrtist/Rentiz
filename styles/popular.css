@@ -1,6 +1,6 @@
 .section__popular {
     background-color: #1A242F;
-    background-image: url(img/popular_bg.png);
+    background-image: url(../img/popular_bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 160px 0;
