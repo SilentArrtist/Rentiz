@@ -1,0 +1,40 @@
+/* STYLES */
+@import url(header.css);
+@import url(burger.css);
+@import url(hero.css);
+@import url(featured.css);
+@import url(popular.css);
+@import url(advantages.css);
+@import url(gallery.css);
+@import url(start.css);
+@import url(footer.css);
+
+@import url(reusable.css);
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Work+Sans:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --containerWidth: 1440px;
+
+    --primaryColor: #0f1b26;
+    --secondaryColor: #1AA090;
+}
+
+.main__body {
+    background: var(--primaryColor);
+    font-family: 'Work Sans';
+    font-style: normal;
+}
+
+.container {
+    max-width: var(--containerWidth);
+    margin: 0 auto;
+    padding: 0 10px;
+}

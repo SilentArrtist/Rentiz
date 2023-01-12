@@ -1,0 +1,31 @@
+.btn {
+    cursor: pointer;
+    padding: 11px 29px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: capitalize;
+    border: 1px solid var(--secondaryColor);
+    transition: 0.3s ease all;
+}
+
+@media (width<=480px) {
+    .btn {
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 20px;
+        text-align: center;
+    }
+}
+
+.explore_btn {
+    color: #fff;
+    background: #2F2F2F;
+    transition: 0.3s ease all;
+    border: 1px solid #2F2F2F;
+}
+
+.explore_btn:hover {
+    color: #2F2F2F;
+    background: #fff;
+}

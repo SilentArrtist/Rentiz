@@ -1,0 +1,86 @@
+header {
+    margin-top: 40px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 14px 0;
+}
+
+
+
+.menu__block {
+    display: flex;
+    gap: clamp(1.5rem, 0.591rem + 4.55vw, 4.625rem);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: clamp(1rem, 0.564rem + 2.18vw, 2.5rem);
+}
+
+.menu_item {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: capitalize;
+    color: #D6D6D6;
+}
+
+.menu_item:last-child {
+    margin-right: 0;
+}
+
+.link {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+}
+
+.link::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    bottom: -7px;
+    left: 0;
+    background-color: var(--secondaryColor);
+    max-width: 100%;
+    width: 0%;
+}
+
+.link:hover::after {
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) .2s all;
+    width: 100%;
+}
+
+.menu__btns {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.login_btn {
+    color: #D6D6D6;
+}
+
+.login_btn:hover {
+    color: #fff;
+    background: var(--secondaryColor);
+}
+
+.sign_up_btn {
+    color: #fff;
+    background: var(--secondaryColor);
+}
+
+.sign_up_btn:hover {
+    color: #D6D6D6;
+    background: #116d62;
+}

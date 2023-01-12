@@ -1,0 +1,147 @@
+footer {
+    padding-top: 140px;
+    background: #1A242F;
+}
+
+.footer .container {
+    max-width: 1325px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+.footer_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_block:first-child {
+    flex-direction: column;
+    max-width: 340px;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 170%;
+    color: #D6D6D6;
+}
+
+.social_list {
+    display: flex;
+    gap: 31px;
+}
+
+.social_item a svg path {
+    transition: 0.3s ease all;
+}
+
+.social_item:hover {
+    transform: scale(1.1);
+}
+
+.social_item:hover a svg path {
+    fill: #fff;
+}
+
+
+.links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: clamp(1.563rem, -0.528rem + 10.45vw, 8.75rem);
+}
+
+.link_block .link_name {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 126%;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 11px;
+}
+
+.links_list {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.links_list .link_item {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 170%;
+    color: #D6D6D6;
+    transition: 0.3s ease all;
+}
+
+.links_list .link_item:hover {
+    transform: scale(1.05);
+    color: #fff;
+}
+
+
+.copyright {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 170%;
+    color: #D6D6D6;
+}
+
+footer hr {
+    margin-top: 94px;
+    border: none;
+    border-top: 1px solid #303A44;
+}
+
+@media (max-width:1100px) {
+    .footer_info {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .footer_block:first-child {
+        gap: 25px;
+        align-items: center;
+    }
+
+    .links {
+        grid-template-columns: 2fr 2fr;
+    }
+}
+
+@media (max-width:992px) {
+    footer {
+        padding-top: 90px;
+    }
+}
+
+@media (max-width:768px) {
+    .copyright {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .copyright_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:480px) {
+    .links {
+        grid-template-columns: 1fr;
+    }
+}
